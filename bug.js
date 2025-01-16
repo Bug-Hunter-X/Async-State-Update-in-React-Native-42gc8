@@ -1,0 +1,1 @@
+This React Native code produces an error because the state update happens asynchronously. When you call `setMyState`, the update doesn't happen immediately; it happens in the next rendering cycle.  This means that the `console.log` statement might print the old value of `myState` before the update takes effect.
